@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'sunApp';
+  showDecode = false;
+  chnageVar(a) {
+    if (a === 'decodePlox') {
+      this.showDecode = true;
+    }
+    if (a === 'encodePlox') {
+      this.showDecode = false;
+    }
+  }
 }

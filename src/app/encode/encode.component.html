@@ -1,0 +1,13 @@
+<div class="container-fluid m-0 p-0">
+  <form>
+    <div class="form-group">
+      <label>Message to be encoded</label>
+      <input type="text" class="form-control" id="messageInput" placeholder="Enter the message to be encoded">
+    </div>
+    <div id="encodeButton" (click)="addOutputDiv()" class="btn-primary">Submit</div>
+  </form>
+  <div class="container-fluid p-0 m-0" *ngIf="addOutDiv">
+  <label>sunCode:</label>
+  <p>{{ outputSunCode }}</p>
+  </div>
+</div>
